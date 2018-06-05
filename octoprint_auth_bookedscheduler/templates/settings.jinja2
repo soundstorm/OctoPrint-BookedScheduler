@@ -1,0 +1,24 @@
+<h3>{{ _("Booked Scheduler Configuration") }}</h3>
+
+<form class="form-horizontal">
+    <label for="plugin_booked_url" class="control-label">{{ _('Booked Scheduler Base URL') }}</label>
+    <div class="controls">
+        <input id="plugin_booked_url" type="text" class="input-block-level" data-bind="value: settings.plugins.auth_bookedscheduler.url"
+               placeholder="https://example.org/bookedscheduler" />
+    </div>
+
+    <label for="plugin_booked_api_user" class="control-label">{{ _('Booked Scheduler API User') }}</label>
+    <div class="controls">
+        <input id="plugin_booked_api_user" type="text" class="input-block-level" data-bind="value: settings.plugins.auth_bookedscheduler.api_user"/>
+    </div>
+
+    <label for="plugin_booked_api_user_password" class="control-label">{{ _('Booked Scheduler API User Password') }}</label>
+    <div class="controls">
+        <input id="plugin_booked_api_user_password" type="password" class="input-block-level" data-bind="value: settings.plugins.auth_bookedscheduler.api_user_password"/>
+    </div>
+    
+    <label for="plugin_booked_groups" class="control-label">{{ _('Allowed group-IDs (comma-separated if multiple, leave empty if all users are allowed)') }}</label>
+    <div class="controls">
+        <input id="plugin_booked_groups" type="text" class="input-block-level" data-bind="value: settings.plugins.auth_bookedscheduler.groups" placeholder="1,2"/>
+    </div>
+</form>
