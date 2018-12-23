@@ -131,7 +131,7 @@ class BookedSchedulerUserManager(FilebasedUserManager,
 
 	def get_template_configs(self):
 		return [
-			dict(type="settings", custom_bindings=False, template="settings.jinja2")
+			dict(type="settings")
 		]
 
 
