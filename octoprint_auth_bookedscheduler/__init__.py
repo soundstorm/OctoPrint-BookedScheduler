@@ -125,13 +125,13 @@ class BookedSchedulerUserManager(FilebasedUserManager,
 		)
 
 	def get_settings_version(self):
-		return 1.1
+		return 1.1.1
 
 	# TemplatePlugin
 
 	def get_template_configs(self):
 		return [
-			dict(type="settings")
+			dict(type="settings", custom_bindings=False))
 		]
 
 
