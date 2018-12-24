@@ -125,7 +125,7 @@ class BookedSchedulerUserManager(FilebasedUserManager,
 		)
 
 	def get_settings_version(self):
-		return 1.1.1
+		return 1.2
 
 	# TemplatePlugin
 
