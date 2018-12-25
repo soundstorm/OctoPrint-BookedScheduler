@@ -125,7 +125,7 @@ class BookedSchedulerUserManager(FilebasedUserManager,
 		)
 
 	def get_settings_version(self):
-		return 1.2
+		return 1
 
 	# TemplatePlugin
 
@@ -136,6 +136,7 @@ class BookedSchedulerUserManager(FilebasedUserManager,
 
 
 __plugin_name__ = "Auth BookedScheduler"
+__plugin_description__ = "Authentication provider for Booked Scheduler"
 
 def __plugin_load__():
 	global __plugin_implementation__
